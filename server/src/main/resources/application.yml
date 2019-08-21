@@ -17,6 +17,7 @@
 #  application:
 #    name: service
 
+##二选一 如果选择上半部分则注释下半部分
 ---
 spring:
   application:
