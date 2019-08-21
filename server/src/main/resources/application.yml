@@ -1,0 +1,18 @@
+server:
+  port: 8090 #服务注册中心端口号
+eureka:
+  instance:
+    hostname: eureka-master.com #服务注册中心IP地址
+    prefer-ip-address: false
+  client:
+    registerWithEureka: true #是否向服务注册中心注册自己
+    fetchRegistry: true #是否检索服务
+    serviceUrl: #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://eureka-Branch.com:8094/eureka/
+  server:
+    enableSelfPreservation: false #关闭自我保护模式
+    eviction-interval-timer-in-ms: 10000
+
+spring:
+  application:
+    name: service

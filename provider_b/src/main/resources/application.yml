@@ -1,0 +1,13 @@
+server:
+  port: 8093 #服务注册中心端口号
+eureka:
+  instance:
+    hostname: eureka-providerb.com #服务注册中心IP地址
+    prefer-ip-address: false
+  client:
+    registerWithEureka: true #是否向服务注册中心注册自己
+    serviceUrl: #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://eureka-master.com:8090/eureka/
+spring:
+  application:
+    name: service-provider

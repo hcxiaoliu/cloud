@@ -1,0 +1,13 @@
+server:
+  port: 8091
+eureka:
+  instance:
+    hostname: eureka-providera.com #服务注册中心IP地址
+    prefer-ip-address: false
+  client:
+    serviceUrl: #服务注册中心的配置内容，指定服务注册中心的位置
+     defaultZone: http://eureka-master.com:8090/eureka/
+spring:
+  application:
+    name: service-provider
+
