@@ -15,6 +15,3 @@ eureka:
 spring:
   application:
     name: service
-
-
-#####的输入法让师傅说
