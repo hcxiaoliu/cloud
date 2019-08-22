@@ -1,0 +1,51 @@
+server:
+  port: 8096 #服务注册中心端口号
+
+spring:
+  application:
+    name: service-turbine
+
+
+eureka:
+  instance:
+    hostname: eureka-turbine.com #服务注册中心IP地址
+    prefer-ip-address: false
+  client:
+    registerWithEureka: true #是否向服务注册中心注册自己
+    fetchRegistry:  true
+    serviceUrl: #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://eureka-master.com:8090/eureka/,http://eureka-Branch.com:8094/eureka/
+
+
+
+
+feign:
+  hystrix:
+    enabled: true #添加feign对Hystrix的支持
+
+
+
+# 配置hystrix
+hystrix:
+  stream:
+    enabled: true
+
+
+#turbine配置
+turbine:
+  app-config: service-provider,service-consumer
+  aggregator:
+    cluster-config: default
+  cluster-name-expression: new String("default")
+  instanceUrlSuffix: /xl/hystrix.stream
+  combine-host-port: false
+  stream:
+    maxConcurrentConnections: 50
+#  app-config-list:
+#
+
+
+management:
+  server:
+    servlet:
+      context-path: /xl

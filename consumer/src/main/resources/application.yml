@@ -32,31 +32,31 @@ eureka:
 
 
 feign:
-#  okhttp:
-#    enabled: false
-#  client:
-#    config:
-#    default-config:
-#    default-to-properties:
-## 请求和响应进行压缩，GZIP压缩，以减少通信过程中的性能损耗
-#  compression:
-#    request:
-#      enabled: true #请求压缩
-#      mime-types: text/html,application/xml,application/json #设置压缩的数据类型
-#      min-request-size: 2048 #设置触发压缩的大小下限
-#    response:
-#      enabled: true  #响应压缩
-#
-#  httpclient:
-#    connection-timeout:
-#    connection-timer-repeat:
-#    disable-ssl-validation: false
-#    enabled: false
-#    follow-redirects: false
-#    max-connections:
-#    max-connections-per-route:
-#    time-to-live:
-#    time-to-live-unit: days
+  #  okhttp:
+  #    enabled: false
+  #  client:
+  #    config:
+  #    default-config:
+  #    default-to-properties:
+  ## 请求和响应进行压缩，GZIP压缩，以减少通信过程中的性能损耗
+  #  compression:
+  #    request:
+  #      enabled: true #请求压缩
+  #      mime-types: text/html,application/xml,application/json #设置压缩的数据类型
+  #      min-request-size: 2048 #设置触发压缩的大小下限
+  #    response:
+  #      enabled: true  #响应压缩
+  #
+  #  httpclient:
+  #    connection-timeout:
+  #    connection-timer-repeat:
+  #    disable-ssl-validation: false
+  #    enabled: false
+  #    follow-redirects: false
+  #    max-connections:
+  #    max-connections-per-route:
+  #    time-to-live:
+  #    time-to-live-unit: days
   hystrix:
     enabled: true #添加feign对Hystrix的支持
 
@@ -68,7 +68,6 @@ hystrix:
     default:
       coreSize: 10  #线程池核心线程数
   command:
-    #IService#hello(): 设置某一个接口 default: 设置全部接口
     default:
       execution:
         isolation:
@@ -78,3 +77,15 @@ hystrix:
         requestVolumeThreshold: 3  #当在配置时间窗口内达到此数量后，进行短路。默认20个
         sleepWindowInMilliseconds: 5  #短路多久以后开始尝试是否恢复，默认5s
         errorThresholdPercentage: 50%  #出错百分比阈值，当达到此阈值后，开始短路。默认50%
+  stream:
+    enabled: true
+
+
+#turbine配置
+turbine:
+  app-config:
+  aggregator:
+    cluster-config:
+  cluster-name-expression:
+  app-config-list:
+  combine-host-port: true

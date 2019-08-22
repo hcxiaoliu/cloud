@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
+
 @RestController
 @EnableEurekaClient
 @SpringBootApplication
@@ -18,6 +19,7 @@ public class ProviderBApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProviderBApplication.class, args);
     }
+
     @GetMapping(value = "/getUser")
     @ResponseBody
     public Map<String, Object> getUser(@RequestParam Integer id) {

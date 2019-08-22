@@ -49,37 +49,37 @@
     </dependencyManagement>
 
 
-<!--    &lt;!&ndash; profile配置 &ndash;&gt;-->
-<!--    <profiles>-->
-<!--        <profile>-->
-<!--            &lt;!&ndash; 本地开发环境 &ndash;&gt;-->
-<!--            <id>dev</id>-->
-<!--            &lt;!&ndash; 定义该配置的属性 &ndash;&gt;-->
-<!--            <properties>-->
-<!--                <profiles.active>dev</profiles.active>-->
-<!--            </properties>-->
-<!--            <activation>-->
-<!--                &lt;!&ndash; 设置默认激活这个配置 &ndash;&gt;-->
-<!--                <activeByDefault>true</activeByDefault>-->
-<!--            </activation>-->
-<!--        </profile>-->
-<!--        <profile>-->
-<!--            &lt;!&ndash; 测试环境 &ndash;&gt;-->
-<!--            <id>test</id>-->
-<!--            &lt;!&ndash; 定义该配置的属性 &ndash;&gt;-->
-<!--            <properties>-->
-<!--                <profiles.active>test</profiles.active>-->
-<!--            </properties>-->
-<!--        </profile>-->
-<!--&lt;!&ndash;        <profile>&ndash;&gt;-->
-<!--&lt;!&ndash;            &lt;!&ndash; 生产环境 &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;            <id>pro</id>&ndash;&gt;-->
-<!--&lt;!&ndash;            &lt;!&ndash; 定义该配置的属性 &ndash;&gt;&ndash;&gt;-->
-<!--&lt;!&ndash;            <properties>&ndash;&gt;-->
-<!--&lt;!&ndash;                <profiles.active>pro</profiles.active>&ndash;&gt;-->
-<!--&lt;!&ndash;            </properties>&ndash;&gt;-->
-<!--&lt;!&ndash;        </profile>&ndash;&gt;-->
-<!--    </profiles>-->
+    <!--    &lt;!&ndash; profile配置 &ndash;&gt;-->
+    <!--    <profiles>-->
+    <!--        <profile>-->
+    <!--            &lt;!&ndash; 本地开发环境 &ndash;&gt;-->
+    <!--            <id>dev</id>-->
+    <!--            &lt;!&ndash; 定义该配置的属性 &ndash;&gt;-->
+    <!--            <properties>-->
+    <!--                <profiles.active>dev</profiles.active>-->
+    <!--            </properties>-->
+    <!--            <activation>-->
+    <!--                &lt;!&ndash; 设置默认激活这个配置 &ndash;&gt;-->
+    <!--                <activeByDefault>true</activeByDefault>-->
+    <!--            </activation>-->
+    <!--        </profile>-->
+    <!--        <profile>-->
+    <!--            &lt;!&ndash; 测试环境 &ndash;&gt;-->
+    <!--            <id>test</id>-->
+    <!--            &lt;!&ndash; 定义该配置的属性 &ndash;&gt;-->
+    <!--            <properties>-->
+    <!--                <profiles.active>test</profiles.active>-->
+    <!--            </properties>-->
+    <!--        </profile>-->
+    <!--&lt;!&ndash;        <profile>&ndash;&gt;-->
+    <!--&lt;!&ndash;            &lt;!&ndash; 生产环境 &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;            <id>pro</id>&ndash;&gt;-->
+    <!--&lt;!&ndash;            &lt;!&ndash; 定义该配置的属性 &ndash;&gt;&ndash;&gt;-->
+    <!--&lt;!&ndash;            <properties>&ndash;&gt;-->
+    <!--&lt;!&ndash;                <profiles.active>pro</profiles.active>&ndash;&gt;-->
+    <!--&lt;!&ndash;            </properties>&ndash;&gt;-->
+    <!--&lt;!&ndash;        </profile>&ndash;&gt;-->
+    <!--    </profiles>-->
 
     <build>
         <plugins>

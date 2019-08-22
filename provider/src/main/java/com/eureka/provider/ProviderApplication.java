@@ -19,6 +19,7 @@ public class ProviderApplication {
     public static void main(String[] args) {
         SpringApplication.run(ProviderApplication.class, args);
     }
+
     @GetMapping(value = "/getUser")
     @ResponseBody
     public Map<String, Object> getUser(@RequestParam Integer id) {
