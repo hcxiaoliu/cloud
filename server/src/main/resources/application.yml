@@ -31,7 +31,7 @@ eureka:
     prefer-ip-address: false
   client:
     service-url:
-      defaultZone: http://eureka-Branch.com:8094/eureka/,http://localhost:8099/eureka/
+      defaultZone: http://eureka-Branch.com:8094/eureka/,http://eureka-BranchSun.com:8010/eureka/
 
 ---
 spring:
@@ -46,18 +46,18 @@ eureka:
     prefer-ip-address: false
   client:
     service-url:
-      defaultZone: http://eureka-master.com:8090/eureka/,http://localhost:8099/eureka/
+      defaultZone: http://eureka-master.com:8090/eureka/,http://eureka-BranchSun.com:8010/eureka/
 
 ---
 spring:
   application:
     name: service
-  profiles: localhost
+  profiles: BranchSun
 server:
-  port: 8099
+  port: 8010
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-BranchSun.com
     prefer-ip-address: false
   client:
     service-url:

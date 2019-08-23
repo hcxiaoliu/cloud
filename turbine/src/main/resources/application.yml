@@ -41,7 +41,7 @@ turbine:
   combine-host-port: false
   stream:
     maxConcurrentConnections: 50
-#  app-config-list:
+#  app-configserver-list:
 #
 
 

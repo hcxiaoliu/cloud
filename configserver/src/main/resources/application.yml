@@ -1,0 +1,32 @@
+server:
+  port: 8097
+spring:
+  application:
+    name: xl-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hcxiaoliu/cloud.git     # 配置git仓库的地址
+          search-paths: configs                      # git仓库地址下的相对地址，可以配置多个，用,分割。
+          username: hcxiaoliu                                            # git仓库的账号
+          password: lx960712                                   # git仓库的密码
+
+eureka:
+  instance:
+    hostname: xl-config-server
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-Branch.com:8094/eureka/,http://eureka-master.com:8090  # 注册中心eurka地址
+
+
+rabbitmq:
+  host: 192.168.0.6
+  port: 5672
+  username: admin
+  password: 123456
+
+management:
+  security:
+    enabled: false

@@ -35,8 +35,8 @@ feign:
   #  okhttp:
   #    enabled: false
   #  client:
-  #    config:
-  #    default-config:
+  #    configserver:
+  #    default-configserver:
   #    default-to-properties:
   ## 请求和响应进行压缩，GZIP压缩，以减少通信过程中的性能损耗
   #  compression:
