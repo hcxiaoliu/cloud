@@ -1,10 +1,4 @@
 # cloud
-
-SpringBoot2.x 个人学习示例程序
-Spring Boot 2.0 JDK 1.8 Maven license
-
-个人学习 SpringBoot2.x 写的一些示例程序，项目中每个示例对应一个分支。
-
 springboot版本： 2.1.0.RELEASE
 待解决错误
     com.netflix.turbine.monitor.instance.InstanceMonitor$MisconfiguredHostException: [{"timestamp":"2019-08-22T11:34:53.585+0000","status":404,"error":"Not Found","message":"No message available","path":"/xl/hystrix.stream"}]
