@@ -58,6 +58,15 @@ Consumer raised exception, processing can restart if the connection factory supp
 发觉是没有连接到mq 但是成功那一次 我发送刷新请求成功
 
 现在测试server 可以正常取到git最新文件 
+clent 端配置高可用bus失败  疑似mq没链接
+
+现在为服务端测试
+
+也是两台
+a台引入mq配置 b没有 两台均为启动状态，同时刷新git文件之后
+访问已经更新
+现在执行refresh
+均失败，mq问题
 
 
 
