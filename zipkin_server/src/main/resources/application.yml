@@ -1,0 +1,21 @@
+server:
+  port: 8015 #服务注册中心端口号
+
+spring:
+  application:
+    name: zipkin
+
+
+eureka:
+  instance:
+    hostname: zipkin.server.com #服务注册中心IP地址
+    prefer-ip-address: false
+  client:
+    registerWithEureka: true #是否向服务注册中心注册自己
+    fetchRegistry:  true
+    serviceUrl: #服务注册中心的配置内容，指定服务注册中心的位置
+      defaultZone: http://eureka-master.com:8090/eureka/,http://eureka-Branch.com:8094/eureka/
+
+
+
+

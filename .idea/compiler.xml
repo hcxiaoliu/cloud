@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="demo" />
+        <module name="zuul" />
+        <module name="consumer" />
+        <module name="server_b" />
+        <module name="configclientb" />
+        <module name="config_client" />
+        <module name="configserver" />
+        <module name="zipkin_server" />
+        <module name="provider" />
+        <module name="server" />
+        <module name="configserverb" />
+        <module name="turbine" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config_client" target="1.8" />
+      <module name="config_server" target="1.8" />
+      <module name="configclientb" target="1.8" />
+      <module name="configserver" target="1.8" />
+      <module name="configserverb" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="provider" target="1.8" />
+      <module name="server" target="1.8" />
+      <module name="server_b" target="1.8" />
+      <module name="turbine" target="1.8" />
+      <module name="zipkin_server" target="1.8" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config_client" options="-parameters" />
+      <module name="config_server" options="-parameters" />
+      <module name="configclientb" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="configserverb" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="provider" options="-parameters" />
+      <module name="server" options="-parameters" />
+      <module name="server_b" options="-parameters" />
+      <module name="turbine" options="-parameters" />
+      <module name="zipkin_server" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/cloud.iml" filepath="$PROJECT_DIR$/.idea/cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config_client/config_client.iml" filepath="$PROJECT_DIR$/config_client/config_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configclientb/configclientb.iml" filepath="$PROJECT_DIR$/configclientb/configclientb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configserver/configserver.iml" filepath="$PROJECT_DIR$/configserver/configserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configserverb/configserverb.iml" filepath="$PROJECT_DIR$/configserverb/configserverb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider_b/demo.iml" filepath="$PROJECT_DIR$/provider_b/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/provider/provider.iml" filepath="$PROJECT_DIR$/provider/provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server_b/server_b.iml" filepath="$PROJECT_DIR$/server_b/server_b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/turbine/turbine.iml" filepath="$PROJECT_DIR$/turbine/turbine.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zipkin_server/zipkin_server.iml" filepath="$PROJECT_DIR$/zipkin_server/zipkin_server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul/zuul.iml" filepath="$PROJECT_DIR$/zuul/zuul.iml" />
+    </modules>
+  </component>
+</project>
